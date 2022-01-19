@@ -1,4 +1,4 @@
-# cartographer_m500
+# cartographer_mr500
 
 Cartographer configurations and launch files for mr500 robots.
 
