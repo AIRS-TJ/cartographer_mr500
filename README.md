@@ -4,6 +4,8 @@ Cartographer configurations and launch files for mr500 robots.
 
 下面用到的rosbag都在 /Workspace/Dataset/m500 上
 
+${HOME}是绝对路径
+
 #  Usage
 
 **编译:**
@@ -45,7 +47,7 @@ Cartographer configurations and launch files for mr500 robots.
 
 等待以上命令的节点运行完毕，并生成.pbstream，再运行以下命令
 	
-	$ roslaunch cartographer_mr500 assets_writer_mr500_3d.launch bag_filenames:=/home/j/mr500_experiment_bag/2021-11-29-15-26-33.bag pose_graph_filename:=/home/j/mr500_experiment_bag/2021-11-29-15-26-33.bag.pbstream
+	$ roslaunch cartographer_mr500 assets_writer_mr500_3d.launch bag_filenames:=${HOME}/mr500_experiment_bag/2021-11-29-15-26-33.bag pose_graph_filename:=${HOME}/mr500_experiment_bag/2021-11-29-15-26-33.bag.pbstream
 
 	$ pcl_viewer 2021-11-29-15-26-33.bag_points.pcd
 
