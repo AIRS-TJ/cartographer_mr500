@@ -4,7 +4,7 @@ Cartographer configurations and launch files for mr500 robots.
 
 下面用到的rosbag都在 /Workspace/Dataset/m500 上
 
-${HOME}，${PATH_BAG}是绝对路径
+${PATH_BAG}是绝对路径
 
 #  Usage
 
