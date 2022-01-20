@@ -35,7 +35,7 @@ ${PATH_BAG}是绝对路径
 	$ rosservice call /write_state 用tab键补全后面的参数 "filename: '${PATH_BAG}/2021-05-21-15-14-09.bag.pbstream' 和 include_unfinished_submaps: true" 
 
 
-**纯定位模式：**
+## 纯定位模式
 
 参考：https://google-cartographer-ros.readthedocs.io/en/latest/demos.html
 
@@ -47,13 +47,13 @@ ${PATH_BAG}是绝对路径
 
 	$ roslaunch cartographer_mr500 demo_mr500_3d_localization.launch load_state_filename:=${PATH_BAG}/2021-05-21-15-14-09.bag.pbstream bag_filename:=${HOME}/mr500_experiment_bag/2021-05-21-15-03-45.bag
 	
-**pbstream 生成 pcd：**
+## pbstream 生成 pcd
 	
 	$ roslaunch cartographer_mr500 assets_writer_mr500_3d.launch bag_filenames:=${PATH_BAG}/2021-11-29-15-26-33.bag pose_graph_filename:=${PATH_BAG}/2021-11-29-15-26-33.bag.pbstream
 
 	$ pcl_viewer 2021-11-29-15-26-33.bag_points.pcd
 	
-**pbstream 生成 ros标准格式地图（.yaml+.pgm）：**
+## pbstream 生成 ros标准格式地图（.yaml+.pgm）
 
 	$ roslaunch cartographer_mr500 assets_writer_mr500_3d.launch bag_filenames:=${PATH_BAG}/2021-11-29-15-26-33.bag pose_graph_filename:=${PATH_BAG}/2021-11-29-15-26-33.bag.pbstream
 	
