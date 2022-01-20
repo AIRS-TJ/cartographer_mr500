@@ -8,7 +8,7 @@ ${PATH_BAG}是绝对路径
 
 #  Usage
 
-**编译:**
+## 编译
 
 	$ cd ~/catkin_ws/
 
@@ -16,15 +16,15 @@ ${PATH_BAG}是绝对路径
 
 注意：任何文件只要修改了内容就需要重新编译，即使修改的launch文件或配置都需要重新编译
 
-**运行之前souce环境变量：**
+## 运行之前souce环境变量
 
 	$ source install_isolated/setup.bash
 
-**建图加定位模式：**
+## 建图加定位模式
 
 	$ roslaunch cartographer_mr500 demo_mr500_3d.launch bag_filename:=${PATH_BAG}/2021-05-21-15-14-09.bag
 
-**生成pbstream：**
+## 生成pbstream
 
 	$ roslaunch cartographer_mr500 offline_mr500_3d.launch bag_filenames:=${PATH_BAG}/2021-05-21-15-14-09.bag
 	
