@@ -32,7 +32,7 @@ ${PATH_BAG}是绝对路径
 	
 若想随时生成pbstream：
 	
-	$ rosservice call /write_state 用tab键补全后面的参数 "filename: '' 和 include_unfinished_submaps: true" 
+	$ rosservice call /write_state 用tab键补全后面的参数 "filename: '${PATH_BAG}/2021-05-21-15-14-09.bag.pbstream' 和 include_unfinished_submaps: true" 
 
 
 **纯定位模式：**
