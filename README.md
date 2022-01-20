@@ -22,7 +22,7 @@ ${PATH_BAG}是绝对路径
 
 **建图加定位模式：**
 
-	$ roslaunch cartographer_mr500 demo_mr500_3d.launch bag_filename:=${HOME}/mr500_experiment_bag/2021-05-21-15-14-09.bag
+	$ roslaunch cartographer_mr500 demo_mr500_3d.launch bag_filename:=${PATH_BAG}/2021-05-21-15-14-09.bag
 
 **生成pbstream：**
 
