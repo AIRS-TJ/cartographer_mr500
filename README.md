@@ -47,15 +47,18 @@ ${PATH_BAG}是绝对路径
 
 	$ roslaunch cartographer_mr500 demo_mr500_3d_localization.launch load_state_filename:=${PATH_BAG}/2021-05-21-15-14-09.bag.pbstream bag_filename:=${HOME}/mr500_experiment_bag/2021-05-21-15-03-45.bag
 	
-**pbstream to pcd ：**
+**pbstream 生成 pcd：**
 	
 	$ roslaunch cartographer_mr500 assets_writer_mr500_3d.launch bag_filenames:=${PATH_BAG}/2021-11-29-15-26-33.bag pose_graph_filename:=${PATH_BAG}/2021-11-29-15-26-33.bag.pbstream
 
 	$ pcl_viewer 2021-11-29-15-26-33.bag_points.pcd
+	
+**pbstream 生产 ros标准格式地图（.yaml+.pgm）：**
 
+	$ roslaunch cartographer_mr500 assets_writer_mr500_3d.launch bag_filenames:=${PATH_BAG}/2021-11-29-15-26-33.bag pose_graph_filename:=${PATH_BAG}/2021-11-29-15-26-33.bag.pbstream
+	
+或者：
 
-
-
-
-
-
+	$ rosrun cartographer_ros cartographer_pbstream_to_ros_map -map_filestem=${PATH_BAG}/2021-11-29-15-26-33.bag -pbstream_filename=${PATH_BAG}/2021-11-29-15-26-33.bag.pbstream -resolution=0.05
+	
+注意：这两种命令生成的地图是不一样的！！！
