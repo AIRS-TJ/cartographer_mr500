@@ -55,6 +55,8 @@ ${PATH_BAG}是绝对路径
 	
 ## pbstream 生成 ros标准格式地图（.yaml+.pgm）
 
+参考：https://google-cartographer-ros.readthedocs.io/en/latest/assets_writer.html
+
 	$ roslaunch cartographer_mr500 assets_writer_mr500_3d.launch bag_filenames:=${PATH_BAG}/2021-11-29-15-26-33.bag pose_graph_filename:=${PATH_BAG}/2021-11-29-15-26-33.bag.pbstream
 	
 或者：
