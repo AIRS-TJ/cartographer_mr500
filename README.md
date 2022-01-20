@@ -32,9 +32,7 @@ ${HOME}，${PATH_BAG}是绝对路径
 	
 若想随时生成pbstream：
 	
-	$ rosservice call /write_state "filename: '${PATH_BAG}/2021-05-21-15-14-09.bag.pbstream'
-include_unfinished_submaps: false"
-
+	$ rosservice call /write_state "filename: '${PATH_BAG}/2021-05-21-15-14-09.bag.pbstream' include_unfinished_submaps: false"
 
 **纯定位模式：**
 参考：https://google-cartographer-ros.readthedocs.io/en/latest/demos.html
